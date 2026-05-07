@@ -1,0 +1,70 @@
+/* src/app/projects/projects.module.css */
+
+.main {
+  padding: 4rem 6rem;
+  background-color: #0f172a;
+  min-height: 100vh;
+  color: white;
+  font-family: monospace;
+}
+
+.title {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #60a5fa; /* Blue */
+}
+
+.description {
+  color: #94a3b8;
+  margin-bottom: 3rem;
+}
+
+.projectList {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.projectCard {
+  padding: 2rem;
+  border: 1px solid #334155;
+  border-radius: 0.5rem;
+  background-color: #1e293b;
+  transition: transform 0.2s ease;
+}
+
+/* Added a "Transform" on hover - a classic CSS trick */
+.projectCard:hover {
+  transform: translateY(-5px);
+  border-color: #eab308; /* Highlight yellow on hover */
+}
+
+.tag {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.25rem 0.75rem;
+  background-color: #334155;
+  border-radius: 999px; /* This makes a "Pill" shape */
+  font-size: 0.8rem;
+  color: #e2e8f0;
+}
+/* Container to hold multiple tags */
+.tagContainer {
+  display: flex;
+  flex-wrap: wrap; /* Allows tags to move to the next line if they run out of space */
+  gap: 0.5rem;    /* Spacing between the tags */
+  margin-top: 1rem;
+}
+
+.tag {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  background-color: #334155;
+  border: 1px solid #475569;
+  border-radius: 999px; /* The "Pill" shape */
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #e2e8f0;
+  text-transform: uppercase; /* Makes tags look more professional */
+  letter-spacing: 0.025em;
+}
